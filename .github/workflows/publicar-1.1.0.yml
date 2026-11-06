@@ -1,0 +1,22 @@
+name: Publicar anotaciones 1.1.0
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publicar-1.1.0.yml']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar el instalador y publicar la versión
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          sha256sum --check SHA256SUMS
+          if ! gh release view v1.1.0 >/dev/null 2>&1; then
+            gh release create v1.1.0 Anotaciones_DaVinci_Paco_Estrada_1.1.0.drfx --target "$GITHUB_SHA" --title 'Anotaciones para DaVinci · Paco Estrada · 1.1.0' --notes-file RELEASE.md
+          fi
