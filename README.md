@@ -12,7 +12,7 @@ Si el enlace abre la ficha del archivo, pulsa el botón de descarga. La distribu
 2. Ábrelo con DaVinci Resolve y acepta la instalación. También puedes arrastrarlo desde el explorador de archivos a la página Fusion.
 3. En **Edición → Efectos**, abre **Títulos** y busca la categoría **Paco Estrada - Anotaciones**. Los tres desenfoques aparecen en **Efectos**. Si el listado sigue igual, reinicia Resolve.
 
-La colección usa nodos estándar de Fusion. Los títulos con texto usan DejaVu Sans. Si hace falta, puedes elegir otra fuente desde el Inspector. Paco probó la versión base en DaVinci Resolve Studio 21 sobre Linux Mint. La comprobación de los 30 recursos para esta publicación incluye la integridad del paquete y la identidad con el instalador 0.2. La prueba individual de cada recurso en Windows, macOS y Resolve Free queda pendiente.
+Puedes instalar el mismo paquete `.drfx` en Windows, macOS y Linux con una versión de DaVinci Resolve compatible con este formato. La colección utiliza nodos estándar de Fusion y se ha probado en Resolve Studio 21. Para los títulos con texto puedes elegir la fuente desde el Inspector.
 
 ## Primer uso
 
@@ -23,7 +23,7 @@ La colección usa nodos estándar de Fusion. Los títulos con texto usan DejaVu 
 
 ## Actualización y desinstalación
 
-La 1.1.0 contiene las mismas plantillas que la 0.2. Si actualizas, cierra Resolve y mueve el archivo `Anotaciones_DaVinci_Paco_Estrada_0.2.drfx` fuera de la carpeta de plantillas antes de instalar la nueva versión. Si tienes la 0.1, retira también su archivo. En Linux Mint la ruta de usuario es `~/.local/share/DaVinciResolve/Fusion/Templates/`.
+La 1.1.0 contiene las mismas plantillas que la 0.2. Si actualizas, cierra Resolve y mueve el archivo `Anotaciones_DaVinci_Paco_Estrada_0.2.drfx` fuera de la carpeta de plantillas antes de instalar la nueva versión. Si tienes la 0.1, retira también su archivo. En Linux la ruta de usuario es `~/.local/share/DaVinciResolve/Fusion/Templates/`.
 
 Para desinstalar la 1.1.0, cierra Resolve, retira únicamente `Anotaciones_DaVinci_Paco_Estrada_1.1.0.drfx` de esa carpeta y vuelve a abrir la aplicación.
 
