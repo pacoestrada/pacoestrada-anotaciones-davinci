@@ -19,4 +19,6 @@ jobs:
           sha256sum --check SHA256SUMS
           if ! gh release view v1.1.0 >/dev/null 2>&1; then
             gh release create v1.1.0 Anotaciones_DaVinci_Paco_Estrada_1.1.0.drfx --target "$GITHUB_SHA" --title 'Anotaciones para DaVinci · Paco Estrada · 1.1.0' --notes-file RELEASE.md
+          else
+            gh release edit v1.1.0 --notes-file RELEASE.md
           fi
